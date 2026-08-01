@@ -1,8 +1,29 @@
 aid: pyka
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pyka.png
 name: Pyka
-description: Pyka is a company surfaced as a portfolio company of dcvc, obvious-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Pyka is an Alameda, California company that designs and manufactures large,
+  dual-use heavy-lift autonomous electric aircraft for commercial and defense
+  operations. Its flagship products are the Pelican 2 autonomous crop-protection
+  aircraft for aerial application and the DropShip long-range heavy-lift cargo
+  UAS. Pyka builds a fully integrated, vertically owned autonomy stack — an
+  Autonomy Engine (real-time OS, sensor fusion, flight control, and path
+  planning), a Mission Control operator suite (simulation, communications, and
+  operator interface), and custom aerospace-grade hardware. The company is
+  backed by DCVC and Obvious Ventures. Pyka does not currently publish a public
+  developer API, SDK, or developer portal; this profile captures its public web
+  and domain-security footprint. Surfaced via VC portfolio enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/pyka/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +34,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Autonomous Aircraft
+- Drones
+- Aerospace
+- Agriculture
+- Logistics
+- Defense
+- Robotics
+- Electric Aviation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pyka-domain-security.yml
 - type: Website
   url: https://flypyka.com
+- type: PrivacyPolicy
+  url: https://flypyka.com/privacy-policy
+- type: About
+  url: https://flypyka.com/about-us
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
